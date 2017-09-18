@@ -6,11 +6,11 @@ import time
 def test():
 
 	rospy.init_node('test', anonymous=False)
-	rate = rospy.Rate(2)
+	rate = rospy.Rate(0.5)
 	while not rospy.is_shutdown():
 
 		print("Hello World")
-		time.sleep(1)
+#		time.sleep(1)
 #	rospy.spin();
 
 if __name__ == '__main__':
